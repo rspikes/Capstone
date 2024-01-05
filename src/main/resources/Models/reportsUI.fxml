@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Models.ReportScreen">
+   <children>
+      <Label fx:id="genericLabel" layoutX="10.0" layoutY="14.0" text="Appointment Report">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="appointmentReport_btn" layoutX="10.0" layoutY="574.0" mnemonicParsing="false" onAction="#onAppointment_click" text="Appointment Report" />
+      <Button fx:id="contactReport_btn" layoutX="181.0" layoutY="574.0" mnemonicParsing="false" onAction="#onContact_click" text="Contact Report" />
+      <Button fx:id="divisionReport_btn" layoutX="344.0" layoutY="574.0" mnemonicParsing="false" onAction="#onDivision_click" text="Division Report" />
+      <Button layoutX="1138.0" layoutY="574.0" mnemonicParsing="false" onAction="#onExitBtn_click" text="Exit" />
+      <TextArea fx:id="reportArea" editable="false" layoutX="103.0" layoutY="125.0" prefHeight="336.0" prefWidth="953.0" text="Generic Report" />
+   </children>
+</AnchorPane>

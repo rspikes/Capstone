@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginScreenController.LoginScreenController">
+   <children>
+      <AnchorPane layoutX="35.0" layoutY="50.0" prefHeight="200.0" prefWidth="230.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: grey;">
+         <children>
+            <Label fx:id="userName_lbl" layoutX="43.0" layoutY="33.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="password_lbl" layoutX="45.0" layoutY="85.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userName_input" layoutX="43.0" layoutY="63.0" promptText="Username" />
+            <TextField fx:id="password_input" layoutX="43.0" layoutY="115.0" promptText="Password" AnchorPane.rightAnchor="38.0" />
+            <Button fx:id="login_btn" layoutX="43.0" layoutY="161.0" mnemonicParsing="false" onAction="#onLoginBtn_click" text="Login" />
+            <Button layoutX="118.0" layoutY="161.0" mnemonicParsing="false" onAction="#onNewUserBtn_click" text="New User" AnchorPane.rightAnchor="38.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="location_lbl" layoutX="14.0" layoutY="14.0" text="Logging in from: " textFill="WHITE" />
+      <Label fx:id="userLocation_lbl" layoutX="121.0" layoutY="14.0" text="Users location" textFill="WHITE" />
+   </children>
+</AnchorPane>

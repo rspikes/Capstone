@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: grey; -fx-border-color: black; -fx-border-radius: 30; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CustomerControllers.CustomerScreenController">
+   <children>
+      <AnchorPane layoutX="179.0" layoutY="83.0" prefHeight="435.0" prefWidth="842.0" style="-fx-border-radius: 10; -fx-border-color: white;">
+         <children>
+            <TableView fx:id="customerTable" layoutX="19.0" layoutY="53.0" prefHeight="330.0" prefWidth="804.0">
+              <columns>
+                <TableColumn fx:id="customerID_col" editable="false" prefWidth="75.0" resizable="false" text="Customer ID" />
+                <TableColumn fx:id="customerName_col" editable="false" prefWidth="109.0" resizable="false" text="Customer Name" />
+                  <TableColumn fx:id="customerAddress_col" editable="false" prefWidth="200.0" resizable="false" text="Customer Address" />
+                  <TableColumn fx:id="customerPostal_col" editable="false" prefWidth="75.0" text="Postal Code" />
+                  <TableColumn fx:id="customerPhone_col" editable="false" prefWidth="150.0" text="Phone Number" />
+                  <TableColumn fx:id="customerDiv_col" editable="false" prefWidth="75.0" resizable="false" text="Division ID" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="newCustomer_btn" layoutX="19.0" layoutY="387.0" mnemonicParsing="false" onAction="#onNewCustomerBtn_click" text="New Customer" />
+            <Button fx:id="updateCustomer_btn" layoutX="591.0" layoutY="387.0" mnemonicParsing="false" onAction="#onUpdateCustomer_click" text="Update Customer" />
+            <Button fx:id="delCustomer_btn" layoutX="716.0" layoutY="387.0" mnemonicParsing="false" onAction="#onDelCustomer_click" text="Delete Customer" textFill="RED" />
+            <Button fx:id="vAppointments_btn" layoutX="461.0" layoutY="387.0" mnemonicParsing="false" onAction="#onViewAppsBtn_click" text="View Appointments" />
+            <TextField fx:id="customerSearch_Input" layoutX="672.0" layoutY="14.0" onAction="#onCustomerSearch" promptText="Search for customer" />
+         </children></AnchorPane>
+      <Button fx:id="ExitButton" layoutX="1151.0" layoutY="561.0" mnemonicParsing="false" onAction="#onExitButtonClick" text="Exit" />
+      <Label layoutX="14.0" layoutY="14.0" text="Customer Management Screen" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

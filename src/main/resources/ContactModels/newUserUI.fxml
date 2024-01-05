@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="283.0" prefWidth="346.0" style="-fx-background-color: darkcyan;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginScreenController.NewUserController">
+
+    <AnchorPane layoutX="18.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="312.0" style="-fx-background-color: darkcyan; -fx-border-radius: 10; -fx-border-color: black;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <children>
+            <Label layoutX="12.0" layoutY="14.0" text="User Name" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0" />
+            <Label layoutX="6.0" layoutY="37.0" text="User Password" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="80.0" />
+            <ComboBox fx:id="userTypeDropDown_list" layoutX="153.0" layoutY="126.0" prefHeight="25.0" prefWidth="87.0" promptText="Admin" AnchorPane.topAnchor="120.0" />
+            <TextField fx:id="userID_input" editable="false" layoutX="153.0" layoutY="2.0" promptText="Auto Gen - Disabled" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="2.0" />
+            <TextField fx:id="userName_input" layoutX="153.0" layoutY="2.0" AnchorPane.topAnchor="40.0" />
+         <PasswordField fx:id="userPassword_input" layoutX="153.0" layoutY="86.0" AnchorPane.topAnchor="80.0" />
+            <Label layoutX="14.0" layoutY="93.0" text="User Type" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="120.0" />
+            <Label layoutX="314.0" layoutY="10.0" text="User ID" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+          <Button layoutX="65.0" layoutY="224.0" mnemonicParsing="false" onAction="#newUserCancel_btn" text="Cancel" AnchorPane.topAnchor="230.0" />
+          <Button layoutX="12.0" layoutY="224.0" mnemonicParsing="false" onAction="#newUserSave_btn" text="Save" AnchorPane.topAnchor="230.0" />
+         <Label layoutX="12.0" layoutY="157.0" text="First &amp; Last Name" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="160.0" />
+         <TextField fx:id="contactName_input" layoutX="153.0" layoutY="157.0" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="160.0" />
+         <Label layoutX="22.0" layoutY="194.0" text="Employee Email" textFill="WHITE" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="200.0" />
+         <TextField fx:id="contactEmail_input" editable="false" layoutX="153.0" layoutY="197.0" promptText="Auto-Gen Diabled" AnchorPane.topAnchor="200.0" />
+        </children>
+    </AnchorPane>
+
+</AnchorPane>
