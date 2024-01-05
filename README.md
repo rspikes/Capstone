@@ -39,10 +39,10 @@ MySQL Connector driver version number: mysql-connector-java-8.0.25
 +Program will now show appointments for the current week, when the Week radial button is clicked.
 +Program now displays two kinds of alert for appointments. One is a pop-up message showing if there is an appointment within 15 minute, or a message that displays that there are no upcoming appointments within 15 minutes.
 +Second alert will show above the appointments themselves as a label that is updated.
-+Progam uses Lambda interfaces and inline lambda expressions to improve the code.
++Program uses Lambda interfaces and inline lambda expressions to improve the code.
 ++Date and time lambda interface expression was added to handle appointment time checking and returns a boolean. This simplifies the code and enhances its ability to handle time checking for not just appointments but other time objects in the future.
 ++Login activity lambda interface expression was added to handle writes to the login file and can be utlized wherever an update needs to be done.
-++Other inline lamdas are explained in the Javadoc index.html file that has been included.
+++Other inline lambdas are explained in the Javadoc index.html file that has been included.
 
 
 *Content updates*
